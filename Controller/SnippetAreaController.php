@@ -126,7 +126,9 @@ class SnippetAreaController
             throw new NotFoundHttpException(\sprintf('Snippet for snippet area "%s" does not exist in locale "%s"', $area, $locale));
         }
 
-        $this->snippetAreaReferenceStore?->add($area);
+        if ($this->snippetAreaReferenceStore) {
+            $this->snippetAreaReferenceStore->add($area);
+        }
 
         $resolvedSnippet = $this->structureResolver->resolve(
             $snippet,
