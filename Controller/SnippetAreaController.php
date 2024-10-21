@@ -168,7 +168,7 @@ class SnippetAreaController
         $response->setSharedMaxAge($this->sharedMaxAge);
 
         $cacheLifetime = $this->cacheLifetime;
-        if ($this->cacheLifetimeRequestStore !== null) {
+        if (null !== $this->cacheLifetimeRequestStore) {
             $this->cacheLifetimeRequestStore->setCacheLifetime($this->cacheLifetime);
             $cacheLifetime = $this->cacheLifetimeRequestStore->getCacheLifetime();
         }
