@@ -19,7 +19,7 @@ use Sulu\Bundle\ContactBundle\Entity\ContactInterface;
 trait CreateContactTrait
 {
     /**
-     * @param array{firstName: string, lastName: string, title?: string, formOfAddress?: int} $data
+     * @param array{firstName: string, lastName: string, formOfAddress?: int} $data
      */
     private static function createContact(array $data): ContactInterface
     {
@@ -28,10 +28,6 @@ trait CreateContactTrait
         $contact = new Contact();
         $contact->setFirstName($data['firstName']);
         $contact->setLastName($data['lastName']);
-
-        if (isset($data['title'])) {
-            $contact->setTitle($data['title']);
-        }
 
         if (isset($data['formOfAddress'])) {
             $contact->setFormOfAddress($data['formOfAddress']);

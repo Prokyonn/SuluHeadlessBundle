@@ -1,6 +1,5 @@
 {
     "id": "@uuid@",
-    "nodeType": 1,
     "type": "page",
     "template": "resolver-test",
     "content": {
@@ -13,7 +12,7 @@
             "mimeType": "image/png",
             "name": "test-image.png",
             "title": "Test Image 1",
-            "description": "@string@",
+            "description": "",
             "url": "@string@",
             "locale": "de",
             "size": "@integer@",
@@ -24,20 +23,15 @@
             "isAudio": false,
             "isDocument": false,
             "collection": "@integer@",
-            "type": {
-                "id": "@integer@",
-                "name": "image"
-            },
+            "type": "image",
             "categories": [],
             "tags": [],
             "targetGroups": [],
             "properties": [],
-            "contentLanguages": [],
-            "publishLanguages": [],
             "created": "@string@",
             "changed": "@string@"
         },
-        "text_editor": "@string@",
+        "text_editor": null,
         "link": null,
         "media_selection": [],
         "image_map": [],
@@ -135,21 +129,21 @@
     "created": "@string@.isDateTime()",
     "extension": {
         "excerpt": {
-            "title": "@string@",
-            "description": "@string@",
-            "more": "@string@",
+            "title": "",
+            "description": "",
+            "more": "",
             "categories": [],
             "tags": [],
             "icon": [],
-            "images": [],
+            "image": [],
             "audience_targeting_groups": [],
             "segments": []
         },
         "seo": {
-            "title": "@string@",
-            "description": "@string@",
-            "keywords": "@string@",
-            "canonicalUrl": "@string@",
+            "title": "",
+            "description": "",
+            "keywords": "",
+            "canonicalUrl": "",
             "noIndex": false,
             "noFollow": false,
             "hideInSitemap": false

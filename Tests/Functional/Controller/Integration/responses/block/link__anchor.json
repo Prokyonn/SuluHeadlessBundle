@@ -1,13 +1,12 @@
 {
     "id": "@uuid@",
-    "nodeType": 1,
     "type": "page",
     "template": "resolver-test",
     "content": {
         "title": "Link Anchor",
         "url": "/link-anchor",
-        "link": "https://example.com",
-        "text_editor": "@string@",
+        "link": "https://example.com#section1",
+        "text_editor": null,
         "media_selection": [],
         "single_media_selection": null,
         "image_map": [],
@@ -110,21 +109,21 @@
     "created": "@string@.isDateTime()",
     "extension": {
         "excerpt": {
-            "title": "@string@",
-            "description": "@string@",
-            "more": "@string@",
+            "title": "",
+            "description": "",
+            "more": "",
             "categories": [],
             "tags": [],
             "icon": [],
-            "images": [],
+            "image": [],
             "audience_targeting_groups": [],
             "segments": []
         },
         "seo": {
-            "title": "@string@",
-            "description": "@string@",
-            "keywords": "@string@",
-            "canonicalUrl": "@string@",
+            "title": "",
+            "description": "",
+            "keywords": "",
+            "canonicalUrl": "",
             "noIndex": false,
             "noFollow": false,
             "hideInSitemap": false

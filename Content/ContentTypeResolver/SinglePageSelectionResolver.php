@@ -31,7 +31,7 @@ class SinglePageSelectionResolver implements ContentTypeResolverInterface
     public function resolve(mixed $data, FieldMetadata $fieldMetadata, string $locale, array $attributes = []): ContentView
     {
         if (!\is_string($data)) {
-            return new ContentView(null, ['id' => null]);
+            return new ContentView(null, ['id' => '']);
         }
 
         $content = $this->pageSelectionResolver->resolve([$data], $fieldMetadata, $locale, $attributes);

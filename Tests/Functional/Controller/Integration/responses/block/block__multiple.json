@@ -1,6 +1,5 @@
 {
     "id": "@uuid@",
-    "nodeType": 1,
     "type": "page",
     "template": "resolver-test",
     "content": {
@@ -11,7 +10,7 @@
                 "type": "text",
                 "title": "First Block",
                 "content": "<p>First block content</p>",
-                "settings": {}
+                "settings": []
             },
             {
                 "type": "media",
@@ -37,28 +36,23 @@
                         "categories": [],
                         "tags": [],
                         "targetGroups": [],
-                        "contentLanguages": [],
-                        "publishLanguages": [],
                         "properties": [],
-                        "type": {
-                            "id": 2,
-                            "name": "image"
-                        },
+                        "type": "image",
                         "created": "@string@.isDateTime()",
                         "changed": "@string@.isDateTime()"
                     }
                 ],
                 "caption": "Media block caption",
-                "settings": {}
+                "settings": []
             },
             {
                 "type": "text",
                 "title": "Third Block",
                 "content": "<p>Third block content</p>",
-                "settings": {}
+                "settings": []
             }
         ],
-        "text_editor": "",
+        "text_editor": null,
         "link": null,
         "media_selection": [],
         "single_media_selection": null,
@@ -177,7 +171,7 @@
             "categories": [],
             "tags": [],
             "icon": [],
-            "images": [],
+            "image": [],
             "audience_targeting_groups": [],
             "segments": []
         },
