@@ -3,9 +3,15 @@
     "license": "MIT",
     "type": "sulu-bundle",
     "description": "Bundle that provides controllers and services for using Sulu as headless content management system",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Prokyonn/sulu"
+        }
+    ],
     "require": {
         "php": "^8.2",
-        "sulu/sulu": "^3.0.1@dev",
+        "sulu/sulu": "dev-enhancement/search-index",
         "symfony/config": "^6.4 || ^7.0",
         "symfony/dependency-injection": "^6.4 || ^7.0",
         "symfony/framework-bundle": "^6.4 || ^7.0",
